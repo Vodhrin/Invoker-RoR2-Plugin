@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InvokerGestureMask
+  m_Mask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: invoker_arms
+    m_Weight: 0
+  - m_Path: invoker_back
+    m_Weight: 0
+  - m_Path: invoker_back_backface
+    m_Weight: 0
+  - m_Path: invoker_base
+    m_Weight: 0
+  - m_Path: invoker_base_buttons
+    m_Weight: 0
+  - m_Path: invoker_base_head
+    m_Weight: 0
+  - m_Path: invoker_belt
+    m_Weight: 0
+  - m_Path: invoker_belt_detail
+    m_Weight: 0
+  - m_Path: invoker_belt_front
+    m_Weight: 0
+  - m_Path: invoker_belt_front_frills
+    m_Weight: 0
+  - m_Path: invoker_belt_skirt
+    m_Weight: 0
+  - m_Path: invoker_head
+    m_Weight: 0
+  - m_Path: invoker_shoulder
+    m_Weight: 0
+  - m_Path: orb1
+    m_Weight: 0
+  - m_Path: orb1/attach_orb1
+    m_Weight: 0
+  - m_Path: orb2
+    m_Weight: 0
+  - m_Path: orb2/attach_orb2
+    m_Weight: 0
+  - m_Path: orb3
+    m_Weight: 0
+  - m_Path: orb3/attach_orb3
+    m_Weight: 0
+  - m_Path: orb_geo1
+    m_Weight: 0
+  - m_Path: orb_geo2
+    m_Weight: 0
+  - m_Path: orb_geo3
+    m_Weight: 0
+  - m_Path: orbs_root
+    m_Weight: 0
+  - m_Path: Root_0
+    m_Weight: 1
+  - m_Path: Root_0/belt5_0
+    m_Weight: 0
+  - m_Path: Root_0/belt5_0/belt5_1
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C0
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C0/manSkirt_R1C0
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C0/manSkirt_R1C0/manSkirt_R2C0
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C1
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C1/manSkirt_R1C1
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C1/manSkirt_R1C1/manSkirt_R2C1
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C2
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C2/manSkirt_R1C2
+    m_Weight: 0
+  - m_Path: Root_0/manSkirt_R0C2/manSkirt_R1C2/manSkirt_R2C2
+    m_Weight: 0
+  - m_Path: Root_0/Spine_0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/index_0_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/index_0_L/index_1_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/mid_0_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/mid_0_L/mid_1_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/pinky_0_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/pinky_0_L/pinky_1_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/ring_0_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/ring_0_L/ring_1_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/thumb_0_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_L/bicep_L/elbow_L/wrist_L/thumb_0_L/thumb_1_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/index_0_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/index_0_R/index_1_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/mid_0_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/mid_0_R/mid_1_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/pinky_0_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/pinky_0_R/pinky_1_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/ring_0_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/ring_0_R/ring_1_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/thumb_0_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/clavicle_R/bicep_R/elbow_R/wrist_R/thumb_0_R/thumb_1_R
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/Head_0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/Head_0/Head_1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0/invoker_cape_R1C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0/invoker_cape_R1C0/invoker_cape_R2C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0/invoker_cape_R1C0/invoker_cape_R2C0/invoker_cape_R3C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0/invoker_cape_R1C0/invoker_cape_R2C0/invoker_cape_R3C0/invoker_cape_R4C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C0/invoker_cape_R1C0/invoker_cape_R2C0/invoker_cape_R3C0/invoker_cape_R4C0/invoker_cape_R5C0
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1/invoker_cape_R1C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1/invoker_cape_R1C1/invoker_cape_R2C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1/invoker_cape_R1C1/invoker_cape_R2C1/invoker_cape_R3C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1/invoker_cape_R1C1/invoker_cape_R2C1/invoker_cape_R3C1/invoker_cape_R4C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C1/invoker_cape_R1C1/invoker_cape_R2C1/invoker_cape_R3C1/invoker_cape_R4C1/invoker_cape_R5C1
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2/invoker_cape_R1C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2/invoker_cape_R1C2/invoker_cape_R2C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2/invoker_cape_R1C2/invoker_cape_R2C2/invoker_cape_R3C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2/invoker_cape_R1C2/invoker_cape_R2C2/invoker_cape_R3C2/invoker_cape_R4C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C2/invoker_cape_R1C2/invoker_cape_R2C2/invoker_cape_R3C2/invoker_cape_R4C2/invoker_cape_R5C2
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3/invoker_cape_R1C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3/invoker_cape_R1C3/invoker_cape_R2C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3/invoker_cape_R1C3/invoker_cape_R2C3/invoker_cape_R3C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3/invoker_cape_R1C3/invoker_cape_R2C3/invoker_cape_R3C3/invoker_cape_R4C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/invoker_cape_R0C3/invoker_cape_R1C3/invoker_cape_R2C3/invoker_cape_R3C3/invoker_cape_R4C3/invoker_cape_R5C3
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/shoulderPad_L
+    m_Weight: 1
+  - m_Path: Root_0/Spine_0/Spine_1/shoulderPad_R
+    m_Weight: 1
+  - m_Path: Root_0/thigh_L
+    m_Weight: 0
+  - m_Path: Root_0/thigh_L/knee_L
+    m_Weight: 0
+  - m_Path: Root_0/thigh_L/knee_L/ankle_L
+    m_Weight: 0
+  - m_Path: Root_0/thigh_L/knee_L/ankle_L/toeBase_L
+    m_Weight: 0
+  - m_Path: Root_0/thigh_R
+    m_Weight: 0
+  - m_Path: Root_0/thigh_R/knee_R
+    m_Weight: 0
+  - m_Path: Root_0/thigh_R/knee_R/ankle_R
+    m_Weight: 0
+  - m_Path: Root_0/thigh_R/knee_R/ankle_R/toeBase_R
+    m_Weight: 0

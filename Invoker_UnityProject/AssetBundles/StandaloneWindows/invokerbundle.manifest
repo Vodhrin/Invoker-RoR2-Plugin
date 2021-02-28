@@ -1,0 +1,172 @@
+ManifestFileVersion: 0
+CRC: 1639063819
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e3aac628de8938098dfe7ee4a5c79abd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e8cb03f4f5914587711cfa414a861479
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67079b849227b734694872d8810229b8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 183
+  Script: {instanceID: 0}
+- Class: 319
+  Script: {instanceID: 0}
+Assets:
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/mdlInvoker.prefab
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/cast2.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/invoker.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Animator/animInvoker.controller
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_metalnessMask1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/orb1.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/cast3.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_bloom1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_bloom1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/body.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
+  Sided Shaders/Double Sided Emissive Diffuse.shader
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
+  Sided Shaders/Double Sided Transparent Diffuse Bump Cutout.shader
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/spin.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_bloom1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/cast.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_diffuseWarpMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_selfIllumMask1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_normal1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/orb2.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_rimMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/back.mat
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/attack1.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_rimMask1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_color.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
+  Sided Shaders/Double Sided Standard Diffuse Bump.shader
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/attack2.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/run.fbx
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Animator/InvokerGestureMask.mask
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_detail2.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_tintByBaseMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
+  Sided Shaders/Double Sided Transparent Diffuse Bump.shader
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_bloom1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpSpec.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/belt_skirt.mat
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_metalnessMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_fresnelWarpColor.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularExponent1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_selfIllumMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask.tga
+Dependencies: []
