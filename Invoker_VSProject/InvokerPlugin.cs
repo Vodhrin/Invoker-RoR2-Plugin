@@ -53,6 +53,7 @@ namespace Invoker
             instance = this;
 
             Core.Assets.InitializeAssets();
+            Core.Config.Read();
             CreateCharacter();
             InitializeCharacter();
             InitializeSkills();
@@ -118,27 +119,27 @@ namespace Invoker
             bodyComponent.bodyFlags = CharacterBody.BodyFlags.ImmuneToExecutes;
             bodyComponent.rootMotionInMainState = false;
             bodyComponent.mainRootSpeed = 0;
-            bodyComponent.baseMaxHealth = 90;
-            bodyComponent.levelMaxHealth = 24;
-            bodyComponent.baseRegen = 0.5f;
-            bodyComponent.levelRegen = 0.25f;
-            bodyComponent.baseMaxShield = 0;
-            bodyComponent.levelMaxShield = 0;
-            bodyComponent.baseMoveSpeed = 7;
-            bodyComponent.levelMoveSpeed = 0;
-            bodyComponent.baseAcceleration = 80;
-            bodyComponent.baseJumpPower = 15;
-            bodyComponent.levelJumpPower = 0;
-            bodyComponent.baseDamage = 15;
-            bodyComponent.levelDamage = 3f;
-            bodyComponent.baseAttackSpeed = 1;
-            bodyComponent.levelAttackSpeed = 0;
-            bodyComponent.baseCrit = 1;
-            bodyComponent.levelCrit = 0;
-            bodyComponent.baseArmor = 0;
-            bodyComponent.levelArmor = 0;
-            bodyComponent.baseJumpCount = 1;
-            bodyComponent.sprintingSpeedMultiplier = 1.45f;
+            bodyComponent.baseMaxHealth = Core.Config.baseMaxHealth.Value;
+            bodyComponent.levelMaxHealth = Core.Config.levelMaxHealth.Value;
+            bodyComponent.baseRegen = Core.Config.baseRegen.Value;
+            bodyComponent.levelRegen = Core.Config.levelRegen.Value;
+            bodyComponent.baseMaxShield = Core.Config.baseMaxShield.Value;
+            bodyComponent.levelMaxShield = Core.Config.levelMaxShield.Value;
+            bodyComponent.baseMoveSpeed = Core.Config.baseMoveSpeed.Value;
+            bodyComponent.levelMoveSpeed = Core.Config.levelMoveSpeed.Value;
+            bodyComponent.baseAcceleration = Core.Config.baseAcceleration.Value;
+            bodyComponent.baseJumpPower = Core.Config.baseJumpPower.Value;
+            bodyComponent.levelJumpPower = Core.Config.levelJumpPower.Value;
+            bodyComponent.baseJumpCount = Core.Config.baseJumpCount.Value;
+            bodyComponent.baseDamage = Core.Config.baseDamage.Value;
+            bodyComponent.levelDamage = Core.Config.levelDamage.Value;
+            bodyComponent.baseAttackSpeed = Core.Config.baseAttackSpeed.Value;
+            bodyComponent.levelAttackSpeed = Core.Config.levelAttackSpeed.Value;
+            bodyComponent.baseCrit = Core.Config.baseCrit.Value;
+            bodyComponent.levelCrit = Core.Config.levelCrit.Value;
+            bodyComponent.baseArmor = Core.Config.baseArmor.Value;
+            bodyComponent.levelArmor = Core.Config.levelArmor.Value;
+            bodyComponent.sprintingSpeedMultiplier = Core.Config.sprintingSpeedMultiplier.Value;
             bodyComponent.wasLucky = false;
             bodyComponent.hideCrosshair = false;
             bodyComponent.aimOriginTransform = gameObject3.transform;
@@ -362,7 +363,107 @@ namespace Invoker
 
         private void InitializeSkills()
         {
+            LanguageAPI.Add("INVOKER_PASSIVE_NAME", "");
+            LanguageAPI.Add("INVOKER_PASSIVE_DESCRIPTION", "");
+            LanguageAPI.Add("INVOKER_PRIMARY_NAME", "Elemental Bolt");
+            LanguageAPI.Add("INVOKER_PRIMARY_DESCRIPTION", "Fires a homing magic projectile that deals <style=cIsDamage>" + Core.Config.primaryDamageCoefficient.Value * 100 + "% damage</style>.");
+            LanguageAPI.Add("INVOKER_SECONDARY_NAME", "");
+            LanguageAPI.Add("INVOKER_SECONDARY_DESCRIPTION", "");
+            LanguageAPI.Add("INVOKER_UTILITY_NAME", "");
+            LanguageAPI.Add("INVOKER_UTILITY_DESCRIPTION", "");
+            LanguageAPI.Add("INVOKER_SPECIAL_NAME", "Invoke");
+            LanguageAPI.Add("INVOKER_SPECIAL_DESCRIPTION", "Combines your current elemental orbs to <style=cIsUtility>create a new spell</style>.");
 
+            #region SkillDefs
+
+            //Primary
+            SkillDef elementalBoltSkillDef = ScriptableObject.CreateInstance<SkillDef>();
+            elementalBoltSkillDef.activationState = new SerializableEntityStateType(typeof(States.ElementalBolt));
+            elementalBoltSkillDef.activationStateMachineName = "Weapon";
+            elementalBoltSkillDef.baseMaxStock = 1;
+            elementalBoltSkillDef.baseRechargeInterval = 0f;
+            elementalBoltSkillDef.beginSkillCooldownOnSkillEnd = false;
+            elementalBoltSkillDef.canceledFromSprinting = false;
+            elementalBoltSkillDef.fullRestockOnAssign = true;
+            elementalBoltSkillDef.interruptPriority = InterruptPriority.Any;
+            elementalBoltSkillDef.isBullets = false;
+            elementalBoltSkillDef.isCombatSkill = true;
+            elementalBoltSkillDef.mustKeyPress = false;
+            elementalBoltSkillDef.noSprint = true;
+            elementalBoltSkillDef.rechargeStock = 1;
+            elementalBoltSkillDef.requiredStock = 1;
+            elementalBoltSkillDef.shootDelay = 0f;
+            elementalBoltSkillDef.stockToConsume = 1;
+            elementalBoltSkillDef.icon = null;
+            elementalBoltSkillDef.skillDescriptionToken = "INVOKER_PRIMARY_DESCRIPTION";
+            elementalBoltSkillDef.skillName = "INVOKER_PRIMARY_NAME";
+            elementalBoltSkillDef.skillNameToken = "INVOKER_PRIMARY_NAME";
+
+            //Special
+            SkillDef invokeSkillDef = ScriptableObject.CreateInstance<SkillDef>();
+            invokeSkillDef.activationState = new SerializableEntityStateType(typeof(States.ElementalBolt));
+            invokeSkillDef.activationStateMachineName = "Weapon";
+            invokeSkillDef.baseMaxStock = 1;
+            invokeSkillDef.baseRechargeInterval = 3f;
+            invokeSkillDef.beginSkillCooldownOnSkillEnd = false;
+            invokeSkillDef.canceledFromSprinting = false;
+            invokeSkillDef.fullRestockOnAssign = true;
+            invokeSkillDef.interruptPriority = InterruptPriority.Any;
+            invokeSkillDef.isBullets = false;
+            invokeSkillDef.isCombatSkill = true;
+            invokeSkillDef.mustKeyPress = false;
+            invokeSkillDef.noSprint = true;
+            invokeSkillDef.rechargeStock = 1;
+            invokeSkillDef.requiredStock = 1;
+            invokeSkillDef.shootDelay = 0f;
+            invokeSkillDef.stockToConsume = 1;
+            invokeSkillDef.icon = null;
+            invokeSkillDef.skillDescriptionToken = "INVOKER_SPECIAL_DESCRIPTION";
+            invokeSkillDef.skillName = "INVOKER_SPECIAL_NAME";
+            invokeSkillDef.skillNameToken = "INVOKER_SPECIAL_NAME";
+
+            LoadoutAPI.AddSkillDef(elementalBoltSkillDef);
+            LoadoutAPI.AddSkillDef(invokeSkillDef);
+
+            #endregion
+
+            #region Creating new skill families and GenericSkill components.
+
+            foreach (GenericSkill i in invokerBody.GetComponentsInChildren<GenericSkill>())
+            {
+                DestroyImmediate(i);
+            }
+
+            SkillLocator skillLocator = invokerBody.GetComponent<SkillLocator>();
+
+            //Primary
+            skillLocator.primary = invokerBody.AddComponent<GenericSkill>();
+            SkillFamily newFamilyPrimary = ScriptableObject.CreateInstance<SkillFamily>();
+            newFamilyPrimary.variants = new SkillFamily.Variant[1];
+            LoadoutAPI.AddSkillFamily(newFamilyPrimary);
+            skillLocator.primary.SetFieldValue("_skillFamily", newFamilyPrimary);
+            SkillFamily skillFamilyPrimary = skillLocator.primary.skillFamily;
+            skillFamilyPrimary.variants[0] = new SkillFamily.Variant
+            {
+                skillDef = elementalBoltSkillDef,
+                unlockableName = "",
+                viewableNode = new ViewablesCatalog.Node(elementalBoltSkillDef.skillNameToken, false, null)
+            };
+
+            //Special
+            skillLocator.special = invokerBody.AddComponent<GenericSkill>();
+            SkillFamily newFamilySpecial = ScriptableObject.CreateInstance<SkillFamily>();
+            newFamilySpecial.variants = new SkillFamily.Variant[1];
+            LoadoutAPI.AddSkillFamily(newFamilySpecial);
+            skillLocator.special.SetFieldValue("_skillFamily", newFamilySpecial);
+            SkillFamily skillFamilySpecial = skillLocator.special.skillFamily;
+            skillFamilySpecial.variants[0] = new SkillFamily.Variant
+            {
+                skillDef = invokeSkillDef,
+                unlockableName = "",
+                viewableNode = new ViewablesCatalog.Node(invokeSkillDef.skillNameToken, false, null)
+            };
+            #endregion
         }
 
         private void CreateDoppelGanger()
