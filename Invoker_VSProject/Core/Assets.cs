@@ -12,6 +12,9 @@ namespace Invoker.Core
         public static AssetBundle MainAssetBundle = null;
         public static AssetBundleResourcesProvider Provider;
 
+        public static Sprite portrait;
+        public static Sprite defaultSkin;
+
         public static void InitializeAssets()
         {
             if (MainAssetBundle == null)
@@ -22,6 +25,9 @@ namespace Invoker.Core
                     Provider = new AssetBundleResourcesProvider("@Invoker", MainAssetBundle);
                 }
             }
+
+            portrait = MainAssetBundle.LoadAsset<Sprite>("Portrait");
+            defaultSkin = MainAssetBundle.LoadAsset<Sprite>("DefaultSkin");
         }
     }
 }

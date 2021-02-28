@@ -41,8 +41,8 @@ namespace Invoker
     public class InvokerPlugin : BaseUnityPlugin
     {
         public static GameObject invokerBody;
-        public static GameObject invokerDisplay;
-        public static GameObject invokerDoppelganger;
+        public static GameObject invokerDisplayBody;
+        public static GameObject invokerDoppelgangerMaster;
 
 
         public static BepInEx.Logging.ManualLogSource logger;
@@ -62,8 +62,15 @@ namespace Invoker
         private void CreateCharacter()
         {
             LanguageAPI.Add("INVOKER_NAME", "Invoker");
-            LanguageAPI.Add("INVOKER_DESCRIPTION", "Smart boi." + Environment.NewLine);
+            LanguageAPI.Add("INVOKER_DESCRIPTION", "Carl." + Environment.NewLine);
             LanguageAPI.Add("INVOKER_SUBTITLE", "I Am Very Smart" + Environment.NewLine);
+            LanguageAPI.Add("INVOKER_OUTRO_FLAVOR", "...and so he left, hungry for more knowledge.");
+            //", with no new knowlege to show for it."
+            //", without a shred of new knowledge."
+            //", disgusted by the inconvenience."
+            //I am bad at this.
+
+            LanguageAPI.Add("INVOKER_SKIN_DEFAULT_NAME", "Default");
 
             invokerBody = PrefabAPI.InstantiateClone(Resources.Load<GameObject>("Prefabs/CharacterBodies/CommandoBody"), "InvokerBody", true);
 
@@ -136,7 +143,7 @@ namespace Invoker
             bodyComponent.hideCrosshair = false;
             bodyComponent.aimOriginTransform = gameObject3.transform;
             bodyComponent.hullClassification = HullClassification.Human;
-            bodyComponent.portraitIcon = null;
+            bodyComponent.portraitIcon = Core.Assets.portrait.texture;
             bodyComponent.isChampion = false;
             bodyComponent.currentVehicle = null;
             bodyComponent.skinIndex = 0U;
@@ -194,6 +201,24 @@ namespace Invoker
             characterModel.autoPopulateLightInfos = true;
             characterModel.invisibilityCount = 0;
             characterModel.temporaryOverlays = new List<TemporaryOverlay>();
+
+            ModelSkinController skinController = model.AddComponent<ModelSkinController>();
+            LoadoutAPI.SkinDefInfo skinDefInfo = new LoadoutAPI.SkinDefInfo
+            {
+                BaseSkins = Array.Empty<SkinDef>(),
+                GameObjectActivations = new SkinDef.GameObjectActivation[0],
+                Icon = Core.Assets.defaultSkin,
+                MeshReplacements = new SkinDef.MeshReplacement[0],
+                MinionSkinReplacements = new SkinDef.MinionSkinReplacement[0],
+                Name = "INVOKER_SKIN_DEFAULT_NAME",
+                NameToken = "INVOKER_SKIN_DEFAULT_NAME",
+                ProjectileGhostReplacements = new SkinDef.ProjectileGhostReplacement[0],
+                RendererInfos = rendererInfos.ToArray(),
+                RootObject = model,
+                UnlockableName = "",
+            };
+            SkinDef skin = LoadoutAPI.CreateNewSkinDef(skinDefInfo);
+            skinController.skins = new SkinDef[] { skin };
 
             TeamComponent teamComponent = null;
             if (invokerBody.GetComponent<TeamComponent>() != null) teamComponent = invokerBody.GetComponent<TeamComponent>();
@@ -313,8 +338,8 @@ namespace Invoker
 
         private void InitializeCharacter()
         {
-            invokerDisplay = PrefabAPI.InstantiateClone(invokerBody.GetComponent<ModelLocator>().modelBaseTransform.gameObject, "InvokerDisplay", true);
-            invokerDisplay.AddComponent<NetworkIdentity>();
+            invokerDisplayBody = PrefabAPI.InstantiateClone(invokerBody.GetComponent<ModelLocator>().modelBaseTransform.gameObject, "InvokerDisplay", true);
+            invokerDisplayBody.AddComponent<NetworkIdentity>();
 
             SurvivorDef survivorDef = new SurvivorDef
             {
@@ -324,7 +349,7 @@ namespace Invoker
                 outroFlavorToken = "INVOKER_OUTRO_FLAVOR",
                 primaryColor = Color.magenta,
                 bodyPrefab = invokerBody,
-                displayPrefab = invokerDisplay
+                displayPrefab = invokerDisplayBody
             };
 
             SurvivorAPI.AddSurvivor(survivorDef);
@@ -342,7 +367,15 @@ namespace Invoker
 
         private void CreateDoppelGanger()
         {
+            invokerDoppelgangerMaster = PrefabAPI.InstantiateClone(Resources.Load<GameObject>("Prefabs/CharacterMasters/CommandoMonsterMaster"), "InvokerDoppelgangerMaster", true);
 
+            MasterCatalog.getAdditionalEntries += delegate (List<GameObject> list)
+            {
+                list.Add(invokerDoppelgangerMaster);
+            };
+
+            CharacterMaster component = invokerDoppelgangerMaster.GetComponent<CharacterMaster>();
+            component.bodyPrefab = invokerBody;
         }
 
         private static GameObject CreateModel(GameObject main)
