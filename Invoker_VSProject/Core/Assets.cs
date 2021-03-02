@@ -15,6 +15,8 @@ namespace Invoker.Core
         public static Sprite portrait;
         public static Sprite defaultSkin;
 
+        public static GameObject elementalBoltOrbEffectPrefab;
+
         public static void InitializeAssets()
         {
             if (MainAssetBundle == null)
@@ -28,6 +30,8 @@ namespace Invoker.Core
 
             portrait = MainAssetBundle.LoadAsset<Sprite>("Portrait");
             defaultSkin = MainAssetBundle.LoadAsset<Sprite>("DefaultSkin");
+
+            elementalBoltOrbEffectPrefab = MainAssetBundle.LoadAsset<GameObject>("ElementalBoltOrbEffect");
         }
     }
 }

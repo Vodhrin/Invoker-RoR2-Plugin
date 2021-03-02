@@ -58,7 +58,7 @@ AvatarMask:
   - m_Path: orbs_root
     m_Weight: 0
   - m_Path: Root_0
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Root_0/belt5_0
     m_Weight: 0
   - m_Path: Root_0/belt5_0/belt5_1
@@ -82,7 +82,7 @@ AvatarMask:
   - m_Path: Root_0/manSkirt_R0C2/manSkirt_R1C2/manSkirt_R2C2
     m_Weight: 0
   - m_Path: Root_0/Spine_0
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Root_0/Spine_0/Spine_1
     m_Weight: 1
   - m_Path: Root_0/Spine_0/Spine_1/clavicle_L

@@ -8,6 +8,7 @@ using RoR2;
 using RoR2.Audio;
 using RoR2.Skills;
 using RoR2.Projectile;
+using RoR2.Orbs;
 using RoR2.CharacterAI;
 using BepInEx;
 using BepInEx.Configuration;
@@ -33,6 +34,7 @@ namespace Invoker
         "LanguageAPI",
         "SoundAPI",
         "EffectAPI",
+        "OrbAPI",
         "UnlockablesAPI",
         "ResourcesAPI",
         "NetworkingAPI"
@@ -44,6 +46,7 @@ namespace Invoker
         public static GameObject invokerDisplayBody;
         public static GameObject invokerDoppelgangerMaster;
 
+        public static GameObject elementalBoltOrb;
 
         public static BepInEx.Logging.ManualLogSource logger;
         public static InvokerPlugin instance;
@@ -57,6 +60,8 @@ namespace Invoker
             CreateCharacter();
             InitializeCharacter();
             InitializeSkills();
+            InitializeOrbs();
+            InitializeProjectiles();
             CreateDoppelGanger();
         }
 
@@ -335,6 +340,8 @@ namespace Invoker
             aimAnimator.pitchGiveupRange = 30f;
             aimAnimator.yawGiveupRange = 10f;
             aimAnimator.giveupDuration = 8f;
+
+            invokerBody.AddComponent<Miscellaneous.InvokerTracker>();
         }
 
         private void InitializeCharacter()
@@ -464,6 +471,29 @@ namespace Invoker
                 viewableNode = new ViewablesCatalog.Node(invokeSkillDef.skillNameToken, false, null)
             };
             #endregion
+        }
+
+        private void InitializeOrbs()
+        {
+            elementalBoltOrb = Core.Assets.elementalBoltOrbEffectPrefab;
+            foreach (Transform transform in elementalBoltOrb.GetComponentsInChildren<Transform>()) { transform.localScale = Vector3.one * 6f; }
+            elementalBoltOrb.AddComponent<NetworkIdentity>();
+            elementalBoltOrb.AddComponent<VFXAttributes>().vfxPriority = VFXAttributes.VFXPriority.Always;
+            elementalBoltOrb.AddComponent<EffectComponent>();
+            var orbEffect1 = elementalBoltOrb.AddComponent<OrbEffect>();
+            orbEffect1.startVelocity1 = new Vector3(0, 0, 0);
+            orbEffect1.startVelocity2 = new Vector3(0, 0, 0);
+            orbEffect1.endVelocity1 = new Vector3(1, 1, 1);
+            orbEffect1.endVelocity2 = new Vector3(1, 1, 1);
+            orbEffect1.movementCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+
+            if (elementalBoltOrb) PrefabAPI.RegisterNetworkPrefab(elementalBoltOrb);
+            EffectAPI.AddEffect(elementalBoltOrb);
+            OrbAPI.AddOrb(typeof(Miscellaneous.ElementalBoltOrb));
+        }
+
+        private void InitializeProjectiles()
+        {
         }
 
         private void CreateDoppelGanger()
