@@ -12,10 +12,12 @@
 
   <ItemGroup>
     <None Remove="invokerbundle" />
+    <None Remove="invokersoundbank.bnk" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="invokerbundle" />
+    <EmbeddedResource Include="invokersoundbank.bnk" />
   </ItemGroup>
 
   <ItemGroup>

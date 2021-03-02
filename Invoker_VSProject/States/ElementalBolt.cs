@@ -16,8 +16,6 @@ namespace Invoker.States
         public float damageCoefficient = Core.Config.primaryDamageCoefficient.Value;
         public float procCoefficient = Core.Config.primaryProcCoefficient.Value;
 		public string muzzleString;
-		public GameObject muzzleflashEffectPrefab;
-		public string attackSoundString;
 
 		private float duration;
 		private bool hasFired;
@@ -34,8 +32,6 @@ namespace Invoker.States
 			this.duration = this.baseDuration / this.attackSpeedStat;
 			this.hasFired = false;
 			this.isCrit = Util.CheckRoll(base.characterBody.crit, base.characterBody.master);
-
-			Util.PlayScaledSound(this.attackSoundString, base.gameObject, this.attackSpeedStat);
 
 			Transform modelTransform = base.GetModelTransform();
 
@@ -56,6 +52,8 @@ namespace Invoker.States
 
             if (this.initialOrbTarget && this.animator)
             {
+				Util.PlayScaledSound(Core.Assets.preAttackSound, base.gameObject, base.attackSpeedStat);
+
 				bool attackSwitch = this.animator.GetBool("attackSwitch");
 				if (attackSwitch)
 				{
@@ -99,7 +97,7 @@ namespace Invoker.States
 			if (hurtBox)
 			{
 				Transform transform = this.childLocator.FindChild(this.muzzleString);
-				//EffectManager.SimpleMuzzleFlash(this.muzzleflashEffectPrefab, base.gameObject, this.muzzleString, true);
+				Util.PlayScaledSound(Core.Assets.attackLaunchSound, base.gameObject, base.attackSpeedStat);
 				genericDamageOrb.origin = transform.position;
 				genericDamageOrb.target = hurtBox;
 				OrbManager.instance.AddOrb(genericDamageOrb);

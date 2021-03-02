@@ -8,9 +8,19 @@ namespace Invoker.Miscellaneous
     {
         public override void Begin()
         {
-            this.speed = 35f;
+            this.speed = 40f;
             base.Begin();
         }
+
+        public override void OnArrival()
+        {
+            base.OnArrival();
+            if (this.target)
+            {
+                RoR2.Util.PlaySound(Core.Assets.attackHitSound, this.target.gameObject);
+            }
+        }
+
         public override GameObject GetOrbEffect()
         {
             return InvokerPlugin.elementalBoltOrb;

@@ -10,7 +10,7 @@ namespace Invoker.Miscellaneous
     {
 		public float maxTrackingDistance = 60f;
 		public float maxTrackingAngle = 20f;
-		public float trackerUpdateFrequency = 10f;
+		public float trackerUpdateFrequency = 20f;
 
 		private HurtBox trackingTarget;
 		private CharacterBody characterBody;
