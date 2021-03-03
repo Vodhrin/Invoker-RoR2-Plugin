@@ -22,13 +22,13 @@ namespace Invoker.States
 		protected bool isCrit;
 		private HurtBox initialOrbTarget;
 		private ChildLocator childLocator;
-		private Miscellaneous.InvokerTracker invokerTracker;
+		private Miscellaneous.InvokerAimTracker invokerTracker;
 		private Animator animator;
 
 		public override void OnEnter()
 		{
 			base.OnEnter();
-			this.invokerTracker = base.GetComponent<Miscellaneous.InvokerTracker>();
+			this.invokerTracker = base.GetComponent<Miscellaneous.InvokerAimTracker>();
 			this.duration = this.baseDuration / this.attackSpeedStat;
 			this.hasFired = false;
 			this.isCrit = Util.CheckRoll(base.characterBody.crit, base.characterBody.master);
@@ -57,13 +57,13 @@ namespace Invoker.States
 				bool attackSwitch = this.animator.GetBool("attackSwitch");
 				if (attackSwitch)
 				{
-					this.muzzleString = "HandL";
+					this.muzzleString = "HandR";
 					this.PlayAnimation("Gesture, Override", "Attack");
 					this.animator.SetBool("attackSwitch", !attackSwitch);
 				}
 				else
 				{
-					this.muzzleString = "HandR";
+					this.muzzleString = "HandL";
 					this.PlayAnimation("Gesture, Override", "Attack");
 					this.animator.SetBool("attackSwitch", !attackSwitch);
 				}

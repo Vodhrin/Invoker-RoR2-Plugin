@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 425463855
+CRC: 3487422043
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4b1b1118c969768596daf065c7af6d71
+    Hash: 68d7af633078d5e700ae5a2d6c05ae77
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3bf84118fe54bef407766a8cf6b4951d
+    Hash: 01dcb7d153153f05b78fe645e8338595
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -15,7 +15,11 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
 - Class: 28
+  Script: {instanceID: 0}
+- Class: 33
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
@@ -55,7 +59,9 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_selfIllumMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_metalnessMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/ExortElement.prefab
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/mdlInvoker.prefab
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matExortElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_tintByBaseMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_diffuseWarp.tga
@@ -71,6 +77,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/invoker.fbx
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Animator/animInvoker.controller
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/WexElement.prefab
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_metalnessMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_selfIllumMask.tga
@@ -132,6 +139,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matQuasElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_rimMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpColor.tga
@@ -160,6 +168,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_specularExponent.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_diffuseWarp.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matWexElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_cubeMap.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_cubeMap.tga
@@ -180,6 +189,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_fresnelWarpColor.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularExponent1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/QuasElement.prefab
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_selfIllumMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask.tga
 Dependencies: []

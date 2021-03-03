@@ -16,6 +16,9 @@ namespace Invoker.Core
         public static Sprite defaultSkin;
 
         public static GameObject elementalBoltOrbEffectPrefab;
+        public static GameObject quasElementPrefab;
+        public static GameObject wexElementPrefab;
+        public static GameObject exortElementPrefab;
 
         public const string castMeteorSound = "cast_meteor";
         public const string castInvokeSound = "cast_invoke";
@@ -64,6 +67,9 @@ namespace Invoker.Core
             defaultSkin = MainAssetBundle.LoadAsset<Sprite>("DefaultSkin");
 
             elementalBoltOrbEffectPrefab = MainAssetBundle.LoadAsset<GameObject>("ElementalBoltOrbEffect");
+            quasElementPrefab = MainAssetBundle.LoadAsset<GameObject>("QuasElement");
+            wexElementPrefab = MainAssetBundle.LoadAsset<GameObject>("WexElement");
+            exortElementPrefab = MainAssetBundle.LoadAsset<GameObject>("ExortElement");
         }
     }
 }

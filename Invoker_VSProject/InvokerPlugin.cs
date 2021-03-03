@@ -342,7 +342,9 @@ namespace Invoker
             aimAnimator.yawGiveupRange = 10f;
             aimAnimator.giveupDuration = 8f;
 
-            invokerBody.AddComponent<Miscellaneous.InvokerTracker>();
+            invokerBody.AddComponent<Miscellaneous.InvokerAimTracker>();
+
+            invokerBody.AddComponent<Miscellaneous.InvokerElementController>();
         }
 
         private void InitializeCharacter()
