@@ -146,6 +146,7 @@ namespace Invoker
             bodyComponent.levelArmor = Core.Config.levelArmor.Value;
             bodyComponent.sprintingSpeedMultiplier = Core.Config.sprintingSpeedMultiplier.Value;
             bodyComponent.wasLucky = false;
+            bodyComponent.crosshairPrefab = Resources.Load<GameObject>("prefabs/crosshair/simpledotcrosshair");
             bodyComponent.hideCrosshair = false;
             bodyComponent.aimOriginTransform = gameObject3.transform;
             bodyComponent.hullClassification = HullClassification.Human;
