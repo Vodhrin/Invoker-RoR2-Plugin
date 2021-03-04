@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 766550858
+CRC: 892219184
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 75c62eb860ecd19a399e3c059c6490b6
+    Hash: ed7ff8940e6c4576829065017aa6f8f6
   TypeTreeHash:
     serializedVersion: 2
     Hash: 3bf84118fe54bef407766a8cf6b4951d
@@ -57,7 +57,6 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Exort/ExortElement.prefab
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/mdlInvoker.prefab
-- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matExortElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_tintByBaseMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_diffuseWarp.tga
@@ -146,7 +145,6 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_normal.tga
-- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matQuasElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_rimMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpColor.tga
@@ -179,7 +177,6 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Wex/Materials/matWexParticlesLightningAdditive.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_diffuseWarp.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpRim.tga
-- Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Materials/matWexElement.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_cubeMap.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_cubeMap.tga
