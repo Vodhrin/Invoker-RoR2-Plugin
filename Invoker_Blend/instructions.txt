@@ -1,0 +1,23 @@
+To export from Blender:
+1. Click on: Files > Export > FBX (.fbx).
+2. Check the box: "Limit to : Selected Objects".
+3. In the dropdown, "Object Types": Uncheck everything except "Armature".
+4. Rename the file at the bottom and export.
+
+(IMPORTANT) Might be obvious if you're more experienced with Blender but make sure that any animations have the "Fake User" setting toggled in the action editor or it will be deleted when you save and close the blendfile.
+
+This is the method I have found to work best with Unity and the Dota 2 assets as I have exported them. If you don't do it this way the armature hierarchy will probably not be the same for the model and animations in Unity and it won't work.
+
+To import into Blender:
+
+If you have messed up and need the original animations to restart, your best bet is to contact me(Vodhr#9109) and I can either make a new blend file for you or give you the Source .dmx files for you to import them yourself.
+
+If you want to import the .dmx files yourself, you will need this Blender addon:
+https://developer.valvesoftware.com/wiki/Blender_Source_Tools
+
+To import into Unity:
+
+If you exported from Blender properly as above then you just have to drag the .fbx into Unity. (IMPORTANT)You shouldn't need to change anything in the Rig tab in the Import Settings.
+(MORE IMPORTANT) Do not reimport the actual model into Unity. The prefab that is currently there has components and custom materials on it that would be a pain to re-setup.
+
+This is all just to make sure that everything is exported and imported consistently to avoid gigantic headaches related to animations breaking that I've had in the past with these Dota assets :).

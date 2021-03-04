@@ -27,6 +27,11 @@ namespace Invoker.Core
         public static ConfigEntry<float> levelArmor;
         public static ConfigEntry<float> sprintingSpeedMultiplier;
 
+        public static ConfigEntry<float> quasRegenFractionPerStack;
+        public static ConfigEntry<float> wexMoveSpeedFractionPerStack;
+        public static ConfigEntry<float> wexAttackSpeedFractionPerStack;
+        public static ConfigEntry<float> exortDamageFractionPerStack;
+
         public static ConfigEntry<float> primaryBaseAttackDuration;
         public static ConfigEntry<float> primaryDamageCoefficient;
         public static ConfigEntry<float> primaryProcCoefficient;
@@ -55,9 +60,14 @@ namespace Invoker.Core
             levelArmor = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("01 - Character Stats", "Level Armor"), Core.Constants.invokerLevelArmor, new ConfigDescription("", null, Array.Empty<object>()));
             sprintingSpeedMultiplier = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("01 - Character Stats", "Sprinting Speed Multiplier"), Core.Constants.invokerSprintingSpeedMultiplier, new ConfigDescription("", null, Array.Empty<object>()));
 
-            primaryDamageCoefficient = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Sharp Claws", "Damage Coefficient"), Core.Constants.invokerPrimaryDamageCoefficient, new ConfigDescription("", null, Array.Empty<object>()));
-            primaryBaseAttackDuration = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Sharp Claws", "Base Attack Duration"), Core.Constants.invokerPrimaryBaseAttackDuration, new ConfigDescription("", null, Array.Empty<object>()));
-            primaryProcCoefficient = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Sharp Claws", "Proc Coefficient"), Core.Constants.invokerPrimaryProcCoefficient, new ConfigDescription("", null, Array.Empty<object>()));
+            quasRegenFractionPerStack = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("02 - Elements", "Quas Percent Health Regen Per Stack"), Core.Constants.invokerQuasRegenFractionPerStack, new ConfigDescription("", null, Array.Empty<object>()));
+            wexMoveSpeedFractionPerStack = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("02 - Elements", "Wex Percent Move Speed Buff Per Stack"), Core.Constants.invokerWexMoveSpeedFractionPerStack, new ConfigDescription("", null, Array.Empty<object>()));
+            wexAttackSpeedFractionPerStack = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("02 - Elements", "Wex Percent Attack Speed Buff Per Stack"), Core.Constants.invokerWexAttackSpeedFractionPerStack, new ConfigDescription("", null, Array.Empty<object>()));
+            exortDamageFractionPerStack = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("02 - Elements", "Exort Percent Base Damage Buff Per Stack"), Core.Constants.invokerExortDamageFractionPerStack, new ConfigDescription("", null, Array.Empty<object>()));
+
+            primaryDamageCoefficient = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Elemental Bolt", "Damage Coefficient"), Core.Constants.invokerPrimaryDamageCoefficient, new ConfigDescription("", null, Array.Empty<object>()));
+            primaryBaseAttackDuration = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Elemental Bolt", "Base Attack Duration"), Core.Constants.invokerPrimaryBaseAttackDuration, new ConfigDescription("", null, Array.Empty<object>()));
+            primaryProcCoefficient = InvokerPlugin.instance.Config.Bind<float>(new ConfigDefinition("03 - Primary - Elemental Bolt", "Proc Coefficient"), Core.Constants.invokerPrimaryProcCoefficient, new ConfigDescription("", null, Array.Empty<object>()));
         }
     }
 }

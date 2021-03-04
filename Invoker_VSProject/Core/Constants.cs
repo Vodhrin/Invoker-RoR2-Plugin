@@ -24,6 +24,11 @@
         public const float invokerLevelArmor = 0f;
         public const float invokerSprintingSpeedMultiplier = 1.5f;
 
+        public const float invokerQuasRegenFractionPerStack = 0.01f;
+        public const float invokerWexMoveSpeedFractionPerStack = 0.10f;
+        public const float invokerWexAttackSpeedFractionPerStack = 0.05f;
+        public const float invokerExortDamageFractionPerStack = 0.08f;
+
         public const float invokerPrimaryBaseAttackDuration = 1f;
         public const float invokerPrimaryDamageCoefficient = 1.5f;
         public const float invokerPrimaryProcCoefficient = 1f;

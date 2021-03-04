@@ -48,6 +48,10 @@ namespace Invoker
 
         public static GameObject elementalBoltOrb;
 
+        public static BuffIndex quasBuff;
+        public static BuffIndex wexBuff;
+        public static BuffIndex exortBuff;
+
         public static BepInEx.Logging.ManualLogSource logger;
         public static InvokerPlugin instance;
 
@@ -57,12 +61,19 @@ namespace Invoker
 
             Core.Assets.InitializeAssets();
             Core.Config.Read();
+            Hook();
             CreateCharacter();
             InitializeCharacter();
             InitializeSkills();
+            InitializeBuffs();
             InitializeOrbs();
             InitializeProjectiles();
             CreateDoppelGanger();
+        }
+
+        private void Hook()
+        {
+            On.RoR2.CharacterBody.RecalculateStats += CharacterBody_RecalculateStats;
         }
 
         private void CreateCharacter()
@@ -476,6 +487,45 @@ namespace Invoker
             #endregion
         }
 
+        private void InitializeBuffs()
+        {
+            BuffDef quasBuffDef = new BuffDef
+            {
+                name = "Quas",
+                iconPath = "textures/bufficons/texBuffNullifiedIcon",
+                buffColor = Color.cyan,
+                canStack = true,
+                eliteIndex = EliteIndex.None
+
+            };
+            CustomBuff quasCustomBuff = new CustomBuff(quasBuffDef);
+            quasBuff = BuffAPI.Add(quasCustomBuff);
+
+            BuffDef wexBuffDef = new BuffDef
+            {
+                name = "Wex",
+                iconPath = "textures/bufficons/texBuffNullifiedIcon",
+                buffColor = Color.magenta,
+                canStack = true,
+                eliteIndex = EliteIndex.None
+
+            };
+            CustomBuff wexCustomBuff = new CustomBuff(wexBuffDef);
+            wexBuff = BuffAPI.Add(wexCustomBuff);
+
+            BuffDef exortBuffDef = new BuffDef
+            {
+                name = "Exort",
+                iconPath = "textures/bufficons/texBuffNullifiedIcon",
+                buffColor = Color.yellow,
+                canStack = true,
+                eliteIndex = EliteIndex.None
+
+            };
+            CustomBuff exortCustomBuff = new CustomBuff(exortBuffDef);
+            exortBuff = BuffAPI.Add(exortCustomBuff);
+        }
+
         private void InitializeOrbs()
         {
             elementalBoltOrb = Core.Assets.elementalBoltOrbEffectPrefab;
@@ -521,6 +571,29 @@ namespace Invoker
             GameObject model = Core.Assets.MainAssetBundle.LoadAsset<GameObject>("mdlInvoker");
 
             return model;
+        }
+
+        private void CharacterBody_RecalculateStats(On.RoR2.CharacterBody.orig_RecalculateStats orig, CharacterBody self)
+        {
+            orig(self);
+            if (!self) return;
+
+            if (self.HasBuff(quasBuff))
+            {
+                int count = self.GetBuffCount(quasBuff);
+                self.regen += self.maxHealth * Core.Config.quasRegenFractionPerStack.Value * count;
+            }
+            if (self.HasBuff(wexBuff))
+            {
+                int count = self.GetBuffCount(wexBuff);
+                self.moveSpeed += self.moveSpeed * Core.Config.wexMoveSpeedFractionPerStack.Value * count;
+                self.attackSpeed += self.attackSpeed * Core.Config.wexAttackSpeedFractionPerStack.Value * count;
+            }
+            if (self.HasBuff(exortBuff))
+            {
+                int count = self.GetBuffCount(exortBuff);
+                self.damage += self.damage * Core.Config.exortDamageFractionPerStack.Value * count;
+            }
         }
     }
 }
