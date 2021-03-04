@@ -166,6 +166,10 @@ namespace Invoker
             bodyComponent.currentVehicle = null;
             bodyComponent.skinIndex = 0U;
 
+            LoadoutAPI.AddSkill(typeof(States.InvokerMain));
+            var stateMachine = invokerBody.GetComponent<EntityStateMachine>();
+            stateMachine.mainStateType = new SerializableEntityStateType(typeof(States.InvokerMain));
+
             CharacterMotor characterMotor = invokerBody.GetComponent<CharacterMotor>();
             characterMotor.walkSpeedPenaltyCoefficient = 1f;
             characterMotor.characterDirection = characterDirection;

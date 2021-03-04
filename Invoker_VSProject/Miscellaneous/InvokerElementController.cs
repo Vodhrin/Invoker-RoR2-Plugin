@@ -102,6 +102,7 @@ namespace Invoker.Miscellaneous
                 this.currentElements[0].gameObject.transform.position = this.rootTransform.position;
             }
 
+            Util.PlaySound(Core.Assets.elementSwitchSound, base.gameObject);
             this.UpdateElementBuffs();
         }
 

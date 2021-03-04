@@ -43,6 +43,7 @@ namespace Invoker.Core
         public const string attackHitSound = "attack_hit";
         public const string sunstrikeExplodeNormalSound = "sunstrike_explode1";
         public const string sunstrikeExplodeSpecialSound = "sunstrike_explode2";
+        public const string elementSwitchSound = "elementswitch_click";
 
         public static void InitializeAssets()
         {
