@@ -14,6 +14,21 @@ namespace Invoker.Core
 
         public static Sprite portrait;
         public static Sprite defaultSkin;
+        public static Sprite quasIcon;
+        public static Sprite wexIcon;
+        public static Sprite exortIcon;
+        public static Sprite elementalBoltIcon;
+        public static Sprite alacrityIcon;
+        public static Sprite ghostWalkIcon;
+        public static Sprite meteorIcon;
+        public static Sprite coldSnapIcon;
+        public static Sprite defeaningBlastIcon;
+        public static Sprite EMPIcon;
+        public static Sprite forgeSpritIcon;
+        public static Sprite iceWallIcon;
+        public static Sprite sunStrikeIcon;
+        public static Sprite tornadoIcon;
+        public static Sprite invokeIcon;
 
         public static GameObject elementalBoltOrbEffectPrefab;
         public static GameObject quasElementPrefab;
@@ -65,7 +80,22 @@ namespace Invoker.Core
             }
 
             portrait = MainAssetBundle.LoadAsset<Sprite>("Portrait");
-            defaultSkin = MainAssetBundle.LoadAsset<Sprite>("DefaultSkin");
+            defaultSkin = MainAssetBundle.LoadAsset<Sprite>("DefaultSkinIcon");
+            quasIcon = MainAssetBundle.LoadAsset<Sprite>("QuasIcon");
+            wexIcon = MainAssetBundle.LoadAsset<Sprite>("WexIcon");
+            exortIcon = MainAssetBundle.LoadAsset<Sprite>("ExortIcon");
+            elementalBoltIcon = MainAssetBundle.LoadAsset<Sprite>("ElementalBoltIcon");
+            alacrityIcon = MainAssetBundle.LoadAsset<Sprite>("AlacrityIcon");
+            ghostWalkIcon = MainAssetBundle.LoadAsset<Sprite>("GhostWalkIcon");
+            meteorIcon = MainAssetBundle.LoadAsset<Sprite>("ChaosMeteorIcon");
+            coldSnapIcon = MainAssetBundle.LoadAsset<Sprite>("ColdSnapIcon");
+            defeaningBlastIcon = MainAssetBundle.LoadAsset<Sprite>("DeafeningBlastIcon");
+            EMPIcon = MainAssetBundle.LoadAsset<Sprite>("EMPIcon");
+            forgeSpritIcon = MainAssetBundle.LoadAsset<Sprite>("ForgeSpiritIcon");
+            iceWallIcon = MainAssetBundle.LoadAsset<Sprite>("IceWallIcon");
+            sunStrikeIcon = MainAssetBundle.LoadAsset<Sprite>("SunStrikeIcon");
+            tornadoIcon = MainAssetBundle.LoadAsset<Sprite>("TornadoIcon");
+            invokeIcon = MainAssetBundle.LoadAsset<Sprite>("InvokeIcon");
 
             elementalBoltOrbEffectPrefab = MainAssetBundle.LoadAsset<GameObject>("ElementalBoltOrbEffect");
             quasElementPrefab = MainAssetBundle.LoadAsset<GameObject>("QuasElement");

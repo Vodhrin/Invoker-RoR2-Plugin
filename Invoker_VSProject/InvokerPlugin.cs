@@ -419,7 +419,7 @@ namespace Invoker
             elementalBoltSkillDef.requiredStock = 1;
             elementalBoltSkillDef.shootDelay = 0f;
             elementalBoltSkillDef.stockToConsume = 1;
-            elementalBoltSkillDef.icon = null;
+            elementalBoltSkillDef.icon = Core.Assets.elementalBoltIcon;
             elementalBoltSkillDef.skillDescriptionToken = "INVOKER_PRIMARY_DESCRIPTION";
             elementalBoltSkillDef.skillName = "INVOKER_PRIMARY_NAME";
             elementalBoltSkillDef.skillNameToken = "INVOKER_PRIMARY_NAME";
@@ -442,7 +442,7 @@ namespace Invoker
             invokeSkillDef.requiredStock = 1;
             invokeSkillDef.shootDelay = 0f;
             invokeSkillDef.stockToConsume = 1;
-            invokeSkillDef.icon = null;
+            invokeSkillDef.icon = Core.Assets.invokeIcon;
             invokeSkillDef.skillDescriptionToken = "INVOKER_SPECIAL_DESCRIPTION";
             invokeSkillDef.skillName = "INVOKER_SPECIAL_NAME";
             invokeSkillDef.skillNameToken = "INVOKER_SPECIAL_NAME";

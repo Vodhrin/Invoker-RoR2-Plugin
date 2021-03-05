@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 892219184
+CRC: 3486314173
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ed7ff8940e6c4576829065017aa6f8f6
+    Hash: 202b3b64fa21a1d556d0cf897ef99446
   TypeTreeHash:
     serializedVersion: 2
     Hash: 3bf84118fe54bef407766a8cf6b4951d
@@ -86,13 +86,16 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_tintByBaseMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Wex/Materials/matWexParticlesRingAdditive.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/InvokeIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/body.fbx
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
   Sided Shaders/Double Sided Emissive Diffuse.shader
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/Ciconia Studio/Shaders/Double
   Sided Shaders/Double Sided Transparent Diffuse Bump Cutout.shader
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Exort/Materials/matExortFireParticlesAdditive.mat
-- Assets/InvokerSurvivor/InvokerSurvivorAssets/DefaultSkin.png
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/DefaultSkinIcon.png
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/EMPIcon.png
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/ForgeSpiritIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_color.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Quas/Materials/matQuasParticlesGlow.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_fresnelWarpSpec.tga
@@ -103,8 +106,10 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_bloom1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/ColdSnapIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_color.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_diffuseWarp.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/WexIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Effects/Materials/matElementalBoltParticlesAdditive.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_cubeMap.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_tintByBaseMask.tga
@@ -113,6 +118,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/cast.fbx
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_diffuseWarpMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/AlacrityIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_cubeMap.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_normal.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_selfIllumMask1.tga
@@ -145,10 +151,13 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_reflectance1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_color.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/ElementalBoltIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_reflectance1.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/TornadoIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_rimMask1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_fresnelWarpColor.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_normal.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/ExortIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_metalnessMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpColor.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_color.tga
@@ -161,6 +170,7 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/run.fbx
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Quas/Materials/Textures/texQuasRingWave.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_specularMask.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/GhostWalkIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_tintByBaseMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Effects/Materials/matElementalBoltLightningParticles.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_diffuseWarp.tga
@@ -178,17 +188,20 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_diffuseWarp.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_fresnelWarpRim.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_cubeMap.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/IceWallIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_translucency.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_cubeMap.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_bloom1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_shoulder_fresnelWarpRim.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/attack.fbx
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularExponent.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/SunStrike.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_belt_specularMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_head_diffuseWarp.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpSpec.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Quas/Materials/matQuasParticlesRingWaveAlpha.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpRim.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/QuasIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Quas/Materials/Textures/texQuasOrbGlow.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/custommaterials/belt.mat
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_fresnelWarpColor.tga
@@ -200,7 +213,9 @@ Assets:
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_arms_fresnelWarpColor.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularExponent1.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/invoker_back_translucency.tga
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/ChaosMeteorIcon.png
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_selfIllumMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Model/materials/base/__invoker_base_specularMask.tga
 - Assets/InvokerSurvivor/InvokerSurvivorAssets/Elements/Wex/Materials/matWexParticlesGlow.mat
+- Assets/InvokerSurvivor/InvokerSurvivorAssets/Icons/DeafeningBlastIcon.png
 Dependencies: []
